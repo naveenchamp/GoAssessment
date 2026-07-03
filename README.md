@@ -143,7 +143,7 @@ npm run preview
 ```
 
 ## Deployment
-
+ <img width="573" height="773" alt="Image" src="https://github.com/user-attachments/assets/a884b24b-5415-407f-b552-c80c6caf1bb9" />
 =======
 # GoAssessment
-
+ https://go-assessment.vercel.app/
