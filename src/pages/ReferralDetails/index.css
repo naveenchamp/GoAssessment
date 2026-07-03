@@ -1,0 +1,98 @@
+.referral-details-page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-bottom: 1rem;
+
+  color: var(--gb-accent);
+
+  font-family: "Kalam", cursive;
+  font-size: 1rem;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.referral-details-page__back:hover,
+.referral-details-page__back:focus {
+  color: var(--gb-text);
+  transform: translateX(-4px) rotate(-2deg);
+}
+
+.referral-details-page__back::before {
+  content: "←";
+  font-size: 1.2rem;
+  transition: transform 0.25s ease;
+}
+
+.referral-details-page__back:hover::before,
+.referral-details-page__back:focus::before {
+  transform: translateX(-3px);
+}
+
+.referral-details-page__subtitle {
+  max-width: 620px;
+
+  margin-bottom: 2rem;
+
+  color: var(--gb-muted);
+
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.referral-details-page__empty {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 320px;
+
+  background: var(--gb-card);
+
+  border: 2px dashed var(--gb-border);
+  border-radius: 24px;
+
+  padding: 2rem;
+
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+.referral-details-page__empty:hover {
+  border-color: var(--gb-accent);
+  transform: translateY(-4px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.08);
+}
+
+.referral-details-page__empty::before {
+  content: "📄";
+
+  display: block;
+
+  margin-bottom: 1rem;
+
+  font-size: 3rem;
+
+  opacity: 0.2;
+}
+
+.referral-details-page__empty::after {
+  content: "Nothing to see here yet.";
+
+  margin-top: 0.75rem;
+
+  color: var(--gb-muted);
+
+  font-family: "Kalam", cursive;
+  font-size: 1.15rem;
+}

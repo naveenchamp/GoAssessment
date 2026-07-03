@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Business Referral Dashboard</title>
+    <script>
+      (() => {
+        let savedTheme = '';
+        try {
+          savedTheme = localStorage.getItem('go_business_theme');
+        } catch {
+          savedTheme = '';
+        }
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const theme = savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : systemTheme;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.error-view {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+
+  border: 2px dashed var(--danger-border);
+  border-radius: 16px;
+
+  background: var(--danger-bg);
+  color: var(--danger-text);
+
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  box-shadow: 3px 3px 0 var(--danger-shadow);
+
+  transition: all 0.25s ease;
+}
+
+.error-view:hover {
+  transform: translateY(-2px);
+  box-shadow: 5px 5px 0 var(--danger-shadow);
+}

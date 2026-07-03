@@ -1,0 +1,10 @@
+.referral-table-section__wrap {
+  background: var(--gb-card);
+  border: 1px solid var(--gb-border);
+  border-radius: var(--gb-radius);
+  box-shadow: var(--gb-shadow);
+}
+
+.referral-table-section__empty {
+  color: var(--gb-muted) !important;
+}

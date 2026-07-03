@@ -1,0 +1,41 @@
+.service-summary__table-wrap {
+  position: relative;
+  overflow: hidden;
+
+  background: var(--gb-card);
+  border: 2px dashed var(--gb-border);
+  border-radius: 20px;
+
+  padding: 1.5rem;
+
+  transition: all 0.25s ease;
+}
+
+.service-summary__table-wrap::before {
+  content: "📊";
+  position: absolute;
+  top: 14px;
+  right: 18px;
+
+  font-size: 1.2rem;
+  opacity: 0.18;
+
+  transform: rotate(8deg);
+}
+
+.service-summary__table-wrap::after {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 0.9rem;
+
+  border-bottom: 2px dotted var(--gb-border);
+  opacity: 0.45;
+}
+
+.service-summary__table-wrap:hover {
+  border-color: var(--gb-accent);
+  transform: translateY(-4px) rotate(-0.4deg);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.08);
+}

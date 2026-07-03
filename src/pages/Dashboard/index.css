@@ -1,0 +1,86 @@
+.dashboard-page__hero,
+.dashboard-page__controls {
+  position: relative;
+  overflow: hidden;
+
+  background: var(--gb-card);
+  border: 2px dashed var(--gb-border);
+  border-radius: 20px;
+
+  padding: 1.5rem;
+
+  transition: all 0.25s ease;
+}
+
+.dashboard-page__hero:hover,
+.dashboard-page__controls:hover {
+  border-color: var(--gb-accent);
+  transform: translateY(-4px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-page__hero::before {
+  content: "🚀";
+  position: absolute;
+  top: 16px;
+  right: 20px;
+
+  font-size: 1.4rem;
+  opacity: 0.18;
+
+  transform: rotate(12deg);
+}
+
+.dashboard-page__hero::after {
+  content: "";
+
+  position: absolute;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 1rem;
+
+  border-bottom: 2px dotted var(--gb-border);
+
+  opacity: 0.45;
+}
+
+.dashboard-page__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 0.65rem;
+
+  color: var(--gb-accent);
+
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.dashboard-page__title,
+.dashboard-page__subtitle {
+  position: relative;
+  z-index: 1;
+}
+
+.dashboard-page__title {
+  margin-bottom: 0.5rem;
+
+  color: var(--gb-text);
+
+  font-family: "Kalam", cursive;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.dashboard-page__subtitle {
+  max-width: 650px;
+
+  color: var(--gb-muted);
+
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}

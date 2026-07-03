@@ -1,0 +1,70 @@
+.app-footer {
+  background: var(--gb-footer);
+  border-top: 2px dashed var(--gb-border);
+
+  padding: 1.25rem 0;
+  margin-top: 3rem;
+
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Tiny doodle decoration */
+.app-footer::before {
+  content: "✦";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gb-footer);
+  color: var(--gb-accent);
+  padding: 0 0.35rem;
+  font-size: 0.9rem;
+}
+
+.app-footer__brand {
+  font-family: "Kalam", cursive;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--gb-text);
+
+  letter-spacing: 0.4px;
+}
+
+.app-footer__link {
+  position: relative;
+
+  color: var(--gb-muted);
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: color 0.25s ease,
+              transform 0.25s ease;
+}
+
+.app-footer__link:hover,
+.app-footer__link:focus {
+  color: var(--gb-accent);
+  transform: translateY(-2px);
+}
+
+/* Hand-drawn underline */
+.app-footer__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+
+  width: 0%;
+  height: 2px;
+
+  background: var(--gb-accent);
+  border-radius: 999px;
+
+  transition: width 0.25s ease;
+}
+
+.app-footer__link:hover::after,
+.app-footer__link:focus::after {
+  width: 100%;
+}

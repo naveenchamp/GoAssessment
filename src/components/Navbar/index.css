@@ -1,0 +1,94 @@
+.app-navbar {
+  background: var(--gb-navbar);
+  border-bottom: 2px dashed var(--gb-border);
+  padding: 0.85rem 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.app-navbar__brand {
+  font-family: "Kalam", cursive;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--gb-text);
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.app-navbar__brand:hover,
+.app-navbar__brand:focus {
+  color: var(--gb-accent);
+  transform: rotate(-2deg);
+}
+
+.app-navbar__link {
+  position: relative;
+  color: var(--gb-muted);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.app-navbar__link:hover,
+.app-navbar__link:focus,
+.app-navbar__link--active {
+  color: var(--gb-accent);
+  transform: translateY(-2px);
+}
+
+.app-navbar__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--gb-accent);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.app-navbar__link:hover::after,
+.app-navbar__link:focus::after,
+.app-navbar__link--active::after {
+  width: 100%;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.75rem;
+  height: 2.75rem;
+
+  background: var(--gb-card);
+  color: var(--gb-accent);
+
+  border: 2px dashed var(--gb-border);
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  background: var(--gb-accent);
+  color: #fff;
+  border-color: var(--gb-accent);
+  transform: rotate(12deg) scale(1.05);
+}
+
+.theme-toggle__icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .theme-toggle__icon,
+.theme-toggle:focus .theme-toggle__icon {
+  transform: rotate(180deg);
+}

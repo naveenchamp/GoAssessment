@@ -1,0 +1,56 @@
+.share-referral__card {
+  position: relative;
+  overflow: hidden;
+
+  background: var(--gb-card);
+  border: 2px dashed var(--gb-border);
+  border-radius: 20px;
+
+  padding: 1.6rem;
+
+  transition: all 0.25s ease;
+}
+
+.share-referral__card::before {
+  content: "🎁";
+  position: absolute;
+  top: 14px;
+  right: 18px;
+
+  font-size: 1.25rem;
+  opacity: 0.18;
+
+  transform: rotate(10deg);
+}
+
+.share-referral__card::after {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 0.9rem;
+
+  border-bottom: 2px dotted var(--gb-border);
+  opacity: 0.45;
+}
+
+.share-referral__card:hover {
+  border-color: var(--gb-accent);
+  transform: translateY(-5px) rotate(-0.5deg);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.08);
+}
+
+.share-referral__input-group {
+  background: var(--gb-bg);
+  border: 2px dashed var(--gb-border);
+  border-radius: 14px;
+  overflow: hidden;
+
+  transition: all 0.25s ease;
+}
+
+.share-referral__input-group:hover,
+.share-referral__input-group:focus-within {
+  border-color: var(--gb-accent);
+  box-shadow: 0 0 0 3px rgba(79, 125, 255, 0.12);
+}
