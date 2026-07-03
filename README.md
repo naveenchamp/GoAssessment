@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Go Business Referral Dashboard
 
 A production-ready React + Vite referral dashboard for Go Business. The app supports JWT authentication, protected dashboard routes, referral metrics, referral sharing, searchable and sortable referral records, client-side pagination, and referral detail pages.
@@ -144,7 +144,6 @@ npm run preview
 
 ## Deployment
 
-The project is ready for Vercel. The included `vercel.json` rewrites all routes to `index.html`, allowing React Router routes such as `/referral/:id` to load correctly on refresh.
 =======
 # GoAssessment
->>>>>>> 7bc4e6a6b5e7870f4f7eb89b70ab60b5c9de2865
+
