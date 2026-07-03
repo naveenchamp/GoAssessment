@@ -12,26 +12,42 @@
 }
 
 .share-referral__card::before {
-  content: "🎁";
+  content: "";
+
   position: absolute;
-  top: 14px;
-  right: 18px;
+  top: -18px;
+  right: -18px;
 
-  font-size: 1.25rem;
-  opacity: 0.18;
+  width: 110px;
+  height: 110px;
 
-  transform: rotate(10deg);
+  background: rgba(79, 125, 255, 0.08);
+
+  clip-path: polygon(
+    100% 0,
+    0 0,
+    100% 100%
+  );
+
+  pointer-events: none;
 }
 
 .share-referral__card::after {
   content: "";
-  position: absolute;
-  left: 1.5rem;
-  right: 1.5rem;
-  bottom: 0.9rem;
 
-  border-bottom: 2px dotted var(--gb-border);
-  opacity: 0.45;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  width: 42px;
+  height: 42px;
+
+  border-top: 2px dashed var(--gb-accent);
+  border-right: 2px dashed var(--gb-accent);
+
+  border-radius: 0 12px 0 0;
+
+  opacity: .35;
 }
 
 .share-referral__card:hover {

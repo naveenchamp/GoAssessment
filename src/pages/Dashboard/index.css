@@ -20,17 +20,36 @@
 }
 
 .dashboard-page__hero::before {
-  content: "🚀";
+  content: "";
+
   position: absolute;
-  top: 16px;
-  right: 20px;
+  top: -40px;
+  right: -40px;
 
-  font-size: 1.4rem;
-  opacity: 0.18;
+  width: 220px;
+  height: 220px;
 
-  transform: rotate(12deg);
+  background:
+    linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 38%,
+      rgba(79, 125, 255, 0.08) 38%,
+      rgba(79, 125, 255, 0.08) 58%,
+      transparent 58%
+    );
+
+  clip-path: polygon(
+    30% 0%,
+    100% 0%,
+    100% 70%,
+    72% 55%,
+    58% 100%,
+    35% 72%
+  );
+
+  pointer-events: none;
 }
-
 .dashboard-page__hero::after {
   content: "";
 

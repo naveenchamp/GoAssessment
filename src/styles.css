@@ -214,3 +214,25 @@ h4,
     transition-duration: 0.01ms !important;
   }
 }
+
+.form-select{
+    background-color: var(--gb-input-bg) !important;
+    color: var(--gb-text) !important;
+
+    border:2px dashed var(--gb-border) !important;
+    border-radius:18px !important;
+
+    box-shadow:none !important;
+}
+
+.form-select:focus{
+    border-color:var(--gb-accent)!important;
+
+    box-shadow:
+        0 0 0 4px rgba(79,125,255,.12)!important;
+}
+
+.form-select option{
+    background:var(--gb-card);
+    color:var(--gb-text);
+}
